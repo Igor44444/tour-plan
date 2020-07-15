@@ -387,6 +387,7 @@ template {
   overflow: hidden;
   border-radius: 6px;
   height: 40px;
+  outline: none;
 }
 
 .search__input {
@@ -399,6 +400,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  cursor: pointer;
 }
 
 .search__button {
@@ -409,6 +411,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
