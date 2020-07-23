@@ -6,5 +6,5 @@ var mySwiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
-  effect: 'coverflow',
+  effect: 'slide',
 });
