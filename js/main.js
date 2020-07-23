@@ -7,4 +7,7 @@ var mySwiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button--prev',
   },
   effect: 'slide',
+  keyboard: {
+    enabled: true,
+  },
 });
