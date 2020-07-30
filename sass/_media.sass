@@ -88,7 +88,15 @@
         grid-row: 3
       &-form
         grid-column: span 5
-        grid-row: 4        
+        grid-row: 4
+        margin-bottom: 16px    
+    &__info
+      grid-column: 1 / 6
+      grid-column: span 5
+      padding-right: 0
+      justify-content: space-between
+      &-wrapper
+        padding: 0
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -176,6 +184,13 @@
   .footer
     &__input
       flex-basis: 100%
+    &__info
+      grid-column: span 6
+    &__additional
+      margin-bottom: 21px
+    &__contact
+      &-details
+        margin-bottom: 20px
 @media (max-width: 576px)
   .logo
     width: 99px 
@@ -205,6 +220,7 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
+      grid-row-gap: 30px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -225,14 +241,25 @@
       &-details
         grid-row: 6
         grid-column: 1
+        margin-bottom: 30px
       &-form
         grid-row: 7
         grid-column: 1
+        margin: 0
     &__input
       width: 100%
     &__message
       width: 100%
-
-
-
-
+    &__title
+      &--mb-3
+        margin-bottom: 15px
+    &__info--req
+      flex-basis: 100%
+      order: 1
+      margin-bottom: 14px
+    &__button
+      order: 2
+    &__info
+      display: block
+      &-wrapper
+        padding-bottom: 10px
