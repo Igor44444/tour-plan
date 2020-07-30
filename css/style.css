@@ -1446,8 +1446,12 @@ template {
   .card {
     width: 100%;
   }
+  .footer {
+    padding-bottom: 21px;
+  }
   .footer-wrapper {
     grid-template-columns: 1fr;
+    grid-column-gap: 0;
     grid-row-gap: 30px;
   }
   .footer__logo {
