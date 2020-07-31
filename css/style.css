@@ -1361,7 +1361,7 @@ template {
     justify-content: space-between;
     flex-direction: column;
     border: none;
-    background-color: #fffff;
+    background-color: #fff;
     cursor: pointer;
   }
   .menu-button__line {
