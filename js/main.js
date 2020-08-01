@@ -32,7 +32,6 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 });
 var menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', function () {
-  console.log('click po knopke menu');
   document
     .querySelector('.navbar-button')
     .classList.toggle('navbar-button--visible');
