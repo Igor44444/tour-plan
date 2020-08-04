@@ -56,4 +56,24 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+  //obrabotka form
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: 'invalid',
+      messages: {
+        name: {
+          required: 'Please specify your name',
+          minlength: 'Minimum length 3 characters',
+        },
+        email: {
+          required: 'your email help us to contact you',
+          email: 'Your email address must be in the format of name@domain.com',
+        },
+        phone: {
+          required: 'you forgot your phone number',
+          minlength: 'minimum length 8 characters',
+        },
+      },
+    });
+  });
 });
