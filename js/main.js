@@ -33,7 +33,7 @@ $(document).ready(function () {
   });
   var menuButton = $('.menu-button');
   menuButton.on('click', function () {
-    document.$('.navbar-button').toggleClass('navbar-button--visible');
+    $('.navbar-button').toggleClass('navbar-button--visible');
   });
 
   var modalButton = $('[data-toggle=modal]');
