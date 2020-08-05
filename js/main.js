@@ -71,7 +71,7 @@ $(document).ready(function () {
         },
         phone: {
           required: 'you forgot your phone number',
-          minlength: 'minimum length 8 characters',
+          minlength: 'minimum length 11 characters',
         },
       },
     });
