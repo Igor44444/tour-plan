@@ -54,6 +54,9 @@
     &-slider
       &__item
         max-width: 580px  
+    &__title
+      font-size: 30px
+      line-height: 38px
   .activities
     &-wrapper
       flex-wrap: wrap
@@ -70,6 +73,7 @@
       &-group
         flex-basis: 48%
     &__logo
+      width: 104px
       grid-row: 1 / 2 
       grid-column: span 2
     &__social
@@ -77,11 +81,15 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+    &__title
+      &--inline
+        margin: 0 41px 0 0
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
     &__legal
       grid-column: span 2
+      // padding-left: 50px
     &__additional
       grid-column: span 2
     &__contact
@@ -94,11 +102,13 @@
         margin-bottom: 16px    
     &__info
       grid-column: 1 / 6
-      grid-column: span 5
+      grid-column: span 6
       padding-right: 0
       justify-content: space-between
       &-wrapper
         padding: 0
+      &--payment
+        margin-right: 35px
 @media (max-width: 768px)
   .container
     max-width: 576px

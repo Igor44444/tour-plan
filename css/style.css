@@ -1351,6 +1351,10 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .activities-wrapper {
     flex-wrap: wrap;
   }
@@ -1369,6 +1373,7 @@ template {
     flex-basis: 48%;
   }
   .footer__logo {
+    width: 104px;
     grid-row: 1 / 2;
     grid-column: span 2;
   }
@@ -1376,6 +1381,9 @@ template {
     grid-row: 1 / 2;
     grid-column: span 4;
     align-self: center;
+  }
+  .footer__title--inline {
+    margin: 0 41px 0 0;
   }
   .footer__categories {
     grid-row: 2 / 3;
@@ -1398,12 +1406,15 @@ template {
   }
   .footer__info {
     grid-column: 1 / 6;
-    grid-column: span 5;
+    grid-column: span 6;
     padding-right: 0;
     justify-content: space-between;
   }
   .footer__info-wrapper {
     padding: 0;
+  }
+  .footer__info--payment {
+    margin-right: 35px;
   }
 }
 
