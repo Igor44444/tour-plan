@@ -1366,8 +1366,9 @@ template {
     height: 250px;
   }
   .footer-wrapper {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-row-gap: 40px;
+    grid-column-gap: 0;
   }
   .footer__input-group {
     flex-basis: 48%;
@@ -1393,7 +1394,7 @@ template {
     grid-column: span 2;
   }
   .footer__additional {
-    grid-column: span 2;
+    grid-column: span 3;
   }
   .footer__contact-details {
     grid-column: span 5;
@@ -1406,15 +1407,12 @@ template {
   }
   .footer__info {
     grid-column: 1 / 6;
-    grid-column: span 6;
+    grid-column: span 7;
     padding-right: 0;
     justify-content: space-between;
   }
   .footer__info-wrapper {
     padding: 0;
-  }
-  .footer__info--payment {
-    margin-right: 35px;
   }
 }
 
@@ -1560,11 +1558,18 @@ template {
     width: 49%;
     height: 255px;
   }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 10px;
+  }
+  .footer-wrapper {
+    grid-column-gap: 10px;
+  }
   .footer__input-group {
     flex-basis: 100%;
   }
   .footer__info {
-    grid-column: span 6;
+    grid-column: span 7;
   }
   .footer__additional {
     margin-bottom: 21px;

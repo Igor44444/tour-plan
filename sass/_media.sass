@@ -67,8 +67,9 @@
     height: 250px
   .footer
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: repeat(7, 1fr)
       grid-row-gap: 40px
+      grid-column-gap: 0
     &__input
       &-group
         flex-basis: 48%
@@ -89,9 +90,9 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
-      // padding-left: 50px
+      // padding-left: 40px
     &__additional
-      grid-column: span 2
+      grid-column: span 3
     &__contact
       &-details
         grid-column: span 5
@@ -102,13 +103,11 @@
         margin-bottom: 16px    
     &__info
       grid-column: 1 / 6
-      grid-column: span 6
+      grid-column: span 7
       padding-right: 0
       justify-content: space-between
       &-wrapper
         padding: 0
-      &--payment
-        margin-right: 35px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -235,11 +234,15 @@
     width: 49%
     height: 255px
   .footer
+    padding-top: 73px
+    padding-bottom: 10px
+    &-wrapper
+      grid-column-gap: 10px
     &__input
       &-group
         flex-basis: 100%
     &__info
-      grid-column: span 6
+      grid-column: span 7
     &__additional
       margin-bottom: 21px
     &__contact
