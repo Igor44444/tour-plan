@@ -1623,20 +1623,25 @@ template {
     grid-row: 1;
     grid-column: 1;
   }
+  .footer__title--inline {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
   .footer__social-network {
     grid-row: 2;
     grid-column: 1;
+    flex-wrap: wrap;
   }
   .footer__additional {
-    grid-row: 3;
-    grid-column: 1;
-  }
-  .footer__categories {
     grid-row: 4;
     grid-column: 1;
   }
-  .footer__legal {
+  .footer__categories {
     grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 3;
     grid-column: 1;
   }
   .footer__contact-details {
