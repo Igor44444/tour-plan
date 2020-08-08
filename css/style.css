@@ -774,7 +774,7 @@ template {
 
 .map {
   width: 347px;
-  height: 213px;
+  min-height: 213px;
   background-color: #111111;
   border-radius: 10px;
   overflow: hidden;
