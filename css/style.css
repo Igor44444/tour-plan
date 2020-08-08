@@ -772,12 +772,13 @@ template {
   cursor: pointer;
 }
 
-.map {
+.map-unload {
   width: 347px;
   min-height: 213px;
   background-color: #111111;
   border-radius: 10px;
   overflow: hidden;
+  background-image: url(../img/map-unload.jpg);
 }
 
 .newsletter {
