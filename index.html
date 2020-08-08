@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
-    />
+    /> 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar navbar__mobile--fixed">
+    <header class="navbar navbar__mobile--fixed"> 
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="200">
+          <a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="200">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best tour plan"
@@ -177,6 +179,7 @@
                 <img
                   class="hotel-slider__image"
                   src="img/slides/slide-1.jpg"
+                  loading="lazy"
                   alt="slide"
                 />
               </div>
@@ -184,6 +187,7 @@
                 <img
                   class="hotel-slider__image"
                   src="img/slides/slide-2.jpg"
+                  loading="lazy"
                   alt="slide"
                 />
               </div>
@@ -191,6 +195,7 @@
                 <img
                   class="hotel-slider__image"
                   src="img/slides/slide-3.jpg"
+                  loading="lazy"
                   alt="slide"
                 />
               </div>
@@ -198,6 +203,7 @@
                 <img
                   class="hotel-slider__image"
                   src="img/slides/slide-4.jpg"
+                  loading="lazy"
                   alt="slide"
                 />
               </div>
@@ -205,6 +211,7 @@
                 <img
                   class="hotel-slider__image"
                   src="img/slides/slide-5.jpg"
+                  loading="lazy"
                   alt="slide"
                 />
               </div>
@@ -294,7 +301,7 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="form subscribe newsletter__subscribe "
         >
           <input
             type="email"
@@ -436,6 +443,7 @@
               src="img/activities/activity-1.jpg"
               alt="The curious corner of chamarel"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">The curious corner <br /> of&nbspchamarel</h3>
             <button class="card__button">Book Now</button>
@@ -446,6 +454,7 @@
               src="img/activities/activity-2.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">Gymkhana club golf <br />course</h3>
             <button class="card__button">Book Now</button>
@@ -456,6 +465,7 @@
               src="img/activities/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">Tamarind falls hiking <br /> trip- full day</h3>
             <button class="card__button">Book Now</button>
@@ -466,6 +476,7 @@
               src="img/activities/activity-4.jpg"
               alt="The blue marine discovery quest"
               class="card__image"
+              loading="lazy"
             />
             <h3 class="card__title">The blue marine discovery <br />quest</h3>
             <button class="card__button">Book Now</button>
@@ -591,7 +602,6 @@
                     alt="icon: map"
                   />
                 </div>
-
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
@@ -603,10 +613,11 @@
                     alt="icon:contact-phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 <br />(08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              <div class="footer__item--phones">
+                <p class="footer__item--phone">Tel (business hours) :<a class="footer__item--links" href="tel:269 1500"> 269 1500 </a></p>
+              <p class="footer__item--phone">Tel (hotline) Monday - Saturday:<a class="footer__item--links" href="tel:52-56-61-38"> </a>52-56-61-38 (08:00&nbspam – 20:00&nbsppm)</p>
+              <p class="footer__item--phone">Tel (hotline) Sunday:<a class="footer__item--links" href="tel:52-56-61-38"> 52-56-61-38 </a>(08:00&nbspam – 14:00&nbsppm)</p>
+              </div>
               </li>
               <li class="footer__item">
                 <div class="footer__icon-wrapper">
@@ -616,7 +627,7 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+              <a href="malito:cherly.lawson@example.com" class="footer__item--links">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>

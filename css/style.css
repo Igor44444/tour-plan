@@ -32,7 +32,7 @@
 
 * .message {
   width: 539px;
-  height: 123px;
+  max-height: 123px;
   background-color: #fff;
   border-radius: 4px;
   padding: 18px 23px;
@@ -429,6 +429,10 @@ template {
   background-color: #0A223D;
 }
 
+.navbar-button--visible {
+  overflow-y: scroll;
+}
+
 .navbar-menu {
   list-style: none;
   margin: 0;
@@ -436,9 +440,6 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  float: center;
-  overflow-y: scroll;
-  height: 200px;
   color: #ffffff;
 }
 
@@ -1136,8 +1137,23 @@ template {
   margin-bottom: 20px;
 }
 
+.footer__item--links {
+  text-decoration: none;
+  padding: 0;
+  color: #BDBDBD;
+}
+
+.footer__item--phones {
+  display: inline-block;
+}
+
+.footer__item--phone {
+  margin: 0;
+}
+
 .footer__icon-wrapper {
   min-width: 40px;
+  display: inline-block;
 }
 
 .footer__text {
@@ -1241,6 +1257,7 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow-y: scroll;
 }
 
 .modal__close {
@@ -1581,6 +1598,13 @@ template {
   .footer__contact-details {
     margin-bottom: 20px;
   }
+  .modal__dialog {
+    padding: 33px 60px;
+    min-height: 450px;
+  }
+  .modal__message {
+    min-height: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1678,6 +1702,9 @@ template {
   .footer__info-wrapper {
     padding-bottom: 10px;
   }
+  .modal__dialog {
+    padding: 33px 40px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1686,6 +1713,9 @@ template {
   }
   .hotel-slider__button {
     display: none;
+  }
+  .modal__dialog {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
