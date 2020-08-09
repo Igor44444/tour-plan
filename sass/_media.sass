@@ -13,8 +13,11 @@
     height: 230px
   .footer
     &__input
+      font-size: 100%
       &-group
         flex-basis: 100%
+      &__message
+        font-size: 100%
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -108,6 +111,10 @@
       justify-content: space-between
       &-wrapper
         padding: 0
+  .modal
+    &__dialog
+      min-width: 450px
+      padding: 33px 80px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -250,10 +257,13 @@
         margin-bottom: 20px
   .modal
     &__dialog
-      padding: 33px 60px
-      min-height: 450px
+      padding: 33px 70px
     &__message
       min-height: 50px
+    &__dialog label.invalid
+      font-size: 14px
+      line-height: 10px
+      margin-top: 5px
 @media (max-width: 576px)
   .logo
     width: 99px 
@@ -333,7 +343,18 @@
         padding-bottom: 10px
   .modal
     &__dialog
-      padding: 33px 40px
+      min-width: 380px
+      // padding: 33px 60px
+      padding-top: 0
+    &__title
+      margin-bottom: 0
+    &__input
+      margin-top: 10px
+      padding: 12px 18px
+    &__message
+      margin-top: 10px
+      padding: 12px 18px
+      min-height: initial
 @media (max-width: 420px)
   .hotel
     &-slider
@@ -342,4 +363,60 @@
         display: none
   .modal
     &__dialog
+      padding: 33px 60px
+      min-width: initial
       width: 90%
+@media (max-height: 992px) and (max-width: 1199px)
+  .modal
+    &__dialog
+      padding-top: 10px
+      padding-bottom: 20px
+    &__title
+      margin-top: 8px
+      margin-bottom: 10px
+    &__input
+      margin-top: 10px
+      font-size: 80%
+    &__message
+      margin-top: 10px
+      height: 60px
+      font-size: 80%
+    &__button
+      margin-top: 10px
+  .footer
+    &__input
+      font-size: 70%
+      height: 37px
+    &__input-group label.invalid
+      font-size: 14px
+      line-height: 10px
+      margin-top: 5px
+    &__message
+      font-size: 70%
+@media (max-height: 942px) and (max-width: 1199px)
+  .modal
+    padding-top: 0
+    &__title
+      margin-bottom: 0
+    &__message
+      height: 40px
+      font-size: 70%
+    &__input
+      font-size: 70%
+      height: 37px
+    &__dialog label.invalid
+      font-size: 14px
+      line-height: 10px
+      margin-top: 5px
+  .footer
+    &__input
+      font-size: 70%
+      height: 37px
+    &__input-group label.invalid
+      font-size: 14px
+      line-height: 10px
+      margin-top: 5px
+    &__message
+      font-size: 70%
+
+
